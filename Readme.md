@@ -11,3 +11,7 @@ For example in the **fortigate_mon_admins.py** script, you can see that our exte
 For further information about these APIs, please reference:
 
 [FNDN](https://fndn.fortinet.net/index.php?/fortiapi/1-fortios/)
+
+In order to use this repo, please use f```git clone``` to clone it.  You will need to generate an API Key for FortiGate and add it to your Environment Variables.
+
+For more information about how to create a FortiGate API key reference the Fortinet [Documents](https://docs.fortinet.com/document/forticonverter/7.0.6/online-help/866905/connect-fortigate-device-via-api-token)
