@@ -10,4 +10,5 @@ For example in the **fortigate_mon_admins.py** script, you can see that our exte
 
 For further information about these APIs, please reference:
 
-[FNDN] [https://fndn.fortinet.net/index.php?/fortiapi/1-fortios/]
+[FNDN][link]
+[link]:https://fndn.fortinet.net/index.php?/fortiapi/1-fortios/]
