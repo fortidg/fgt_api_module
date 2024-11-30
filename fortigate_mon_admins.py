@@ -10,9 +10,8 @@ headers = { "Content-Type": "application/json" }
 
 response = get(apikey, ip, port, ext_url)
 
-#print(type(response))
 
-# If the API request was successful, print the admin name and session ID
+# If the API request was successful, print the admin name and session ID for all sessions
 if type(response) != int:
     results = response.get("results")
     for result in results:
