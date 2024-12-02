@@ -50,7 +50,7 @@ def put(apikey, body, ip, port, ext_url):
     else:
         return(response.status_code)
     
-def delete(apikey, ip, port, ext_url, unames):
+def delete(apikey, ip, port, ext_url, items):
     import requests
     from auth import Bearer_auth
 
@@ -58,13 +58,13 @@ def delete(apikey, ip, port, ext_url, unames):
     exturl = ext_url
     url = f"{base_url}/{exturl}"
     headers = { "Content-Type": "application/json" }
-    names = unames
+    items = items
 
 
-    for name in names:
-        url = f"{base_url}/{exturl}/{name}"
+    for item in items:
+        url = f"{base_url}/{exturl}/{item}"
         response = requests.delete(url, headers=headers, auth=Bearer_auth(apikey), verify=False)
         if response.status_code == 200:
-            print(f"User {name} deleted successfully")
+            print(f"User {item} deleted successfully")
         else:
             print("API request failed with status code:", response.status_code)

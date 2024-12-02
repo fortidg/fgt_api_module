@@ -7,9 +7,9 @@ port = 8443
 ext_url = "cmdb/user/local"
 headers = { "Content-Type": "application/json" }
 
-unames = ["testuser2"]
+items = ["testuser2"]
 
 
-response = delete(apikey, ip, port, ext_url, unames)
+response = delete(apikey, ip, port, ext_url, items)
 
 print(response)

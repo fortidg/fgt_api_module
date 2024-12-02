@@ -10,7 +10,7 @@ body = {
   "name": "testuser2",
   "status": "enable",
   "type": "password",
-  "passwd": "Fortinet123!",
+  "passwd": "somegoodpassword",
   "two-factor": "disable",
   "authtimeout": 1440,
   "auth-concurrent-value": 100,
